@@ -1,0 +1,28 @@
+{
+    "homePage": {
+        "homeHeadertitle": "Hazte socio Coopeuch con Cuenta Vista",
+        "homeHeaderDescription": "Comienza el proceso completando los siguientes campos y declaraciones.",
+        "checkboxCtrl" : "Autorizo a Coopeuch a consultar fuentes externas para validar datos personales, laborales y económicos.",
+        "homeFooterDisclaimer": "* En caso de querer obtener los productos por separado, deberás dirigirte a una sucursal Coopeuch."
+    },
+    "personalPage": {
+        "PersonalDataHeadertitle": "Completa tus datos personales",
+        "PersonalDataFormtitle": "Datos de contacto"
+    },
+    "infoPage": {
+        "PlanDetailsHeadertitle": "Información del Plan",
+        "PlanDetailsHeadersubtitle": "Ser socio de Coopeuch",
+        "PlanDetailsHeaderlegend": "Cada socio de la cooperativa paga mensualmente cuotas de participación que varían entre 10 a 100 ($2.640 a $26.400), las que serán descontadas automáticamente en tu Cuenta Vista Coopeuch."
+        
+    }
+
+
+
+
+
+
+
+
+
+
+}
