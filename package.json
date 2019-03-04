@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:video": "cypress run --record --key daab33a2-eba7-4c1c-9792-04dd4ca736b4"
+    "cypress:video": "cypress run --record --key daab33a2-eba7-4c1c-9792-04dd4ca736b4",
+    "cypress:chrome": "cypress run --browser chrome"
   },
   "author": "",
   "license": "ISC",
