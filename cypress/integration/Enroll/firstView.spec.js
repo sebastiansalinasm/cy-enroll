@@ -4,7 +4,7 @@ let data
 let txt
 
 beforeEach(function () { 
-    let env = process.env.NODE_ENV || 'development'
+    let env = process.env.NODE_ENV || 'create-mode'
     let vne = process.env.NODE_ENV || 'homePage'
     cy.fixture('dataDev.json').then((json) => {
         data = json[env]
@@ -47,7 +47,7 @@ beforeEach(function () {
         cy.get('p[class="HomeFooter-disclaimer"]').contains(txt.homeFooterDisclaimer)
         cy.get('[id=btn-continuar]').then(($btnContinue) => {
             if ($btnContinue[0].disabled) {
-                alert('Falta completar campos obligatorios')
+                cy.log('Falta completar campos obligatorios')
             } else {
                 $btnContinue.click()
             }

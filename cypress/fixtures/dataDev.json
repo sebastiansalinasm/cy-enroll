@@ -1,6 +1,6 @@
 {
     "development": {
-        "url": "http://localhost:3000/",
+        "url": "https://enrolamientodev.coopeuch.cl",
         "names": "Sebastián Andrés",
         "middleName": "Salinas",
         "lastName": "Matus",
@@ -8,11 +8,11 @@
         "job": "QA Automation",
         "serialNumber": "A321123321",
         "email": "sebastiansalinas20@gmail.com",
-        "cellphone": 966600935,
+        "cellphone": 997902346,
         "address": "Juan de Barros 3885"
     },
     "testQa":{
-        "url": "http://localhost:3000/",
+        "url": "https://enrolamientoqa.coopeuch.cl",
         "names": "Yesenia Nazaret",
         "middleName": "Morillo",
         "lastName": "Carrizo",
@@ -24,7 +24,7 @@
         "address": "Presidente Jose Manuel Balmaceda 2855"
     },
     "production":{
-        "url": "http://localhost:3000/",
+        "url": "https://enrolamiento.coopeuch.cl",
         "names": "Yesenia Nazaret",
         "middleName": "Morillo",
         "lastName": "Carrizo",
@@ -34,5 +34,17 @@
         "email": "yess992@gmail.com",
         "cellphone": 949145504,
         "address": "Juan de Barros 3885"
+    },
+    "create-mode": {
+        "url": "http://localhost:3000/",
+        "names": "Yesenia Nazaret",
+        "middleName": "Morillo",
+        "lastName": "Carrizo",
+        "job": "Community Manager",
+        "rutUser": "26555878K",
+        "serialNumber": "666555444",
+        "email": "yess992@gmail.com",
+        "cellphone": 949145504,
+        "address": "Presidente Jose Manuel Balmaceda 2855" 
     }
 }

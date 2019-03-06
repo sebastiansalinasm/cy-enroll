@@ -15,6 +15,14 @@ Feature: Flujo enrolamiento Coopeuch
         Given to enter a "Información del Plan" page
         When read the text
         Then press continue button
+    # Screen 4 
+    Scenario: Contratos
+        Given to enter a "Contratos" page
+        When read all texts 
+        When check the "Mandato de Pago"
+        Then press to continue button for the next page
+
+    
     
     
         

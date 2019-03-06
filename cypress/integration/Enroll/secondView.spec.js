@@ -4,7 +4,7 @@ let data
 let txt
 
 beforeEach(function () { 
-    let env = process.env.NODE_ENV || 'development'
+    let env = process.env.NODE_ENV || 'create-mode'
     let vne = process.env.NODE_ENV || 'personalPage'
     cy.fixture('dataDev.json').then((json) => {
         data = json[env]
@@ -30,10 +30,9 @@ beforeEach(function () {
         cy.get('[id=phonecopy]').type(data.cellphone)
         cy.get('[id=email]').type(data.email)
         cy.get('[role=combobox]').type(data.address)
-        cy.get('[class=autocomplete-dropdown-container]').then(($autoComplete) => {
+        cy.get('[class="suggestion-item"]').then(($autoComplete) => {
             $autoComplete[0].click()
-            console.log($autoComplete[0])
-    
+            console.log('Dirección Particular:', $autoComplete[0].innerText)
     })
 })
 
@@ -43,7 +42,11 @@ beforeEach(function () {
                 alert('coño mala mia, que arrecho el codigo')
             } else {
                 $btnContinue.click()
-            }
+                cy.log('Ingresando a página de información')
+                cy.wait(2000)
+            // Validación de Número de Teléfono
+                cy.get('label[class="error-label"]').should('not.exist')
+            } 
         })
     })
 

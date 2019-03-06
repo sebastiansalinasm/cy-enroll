@@ -7,13 +7,21 @@
     },
     "personalPage": {
         "PersonalDataHeadertitle": "Completa tus datos personales",
-        "PersonalDataFormtitle": "Datos de contacto"
+        "PersonalDataFormtitle": "Datos de contacto",
+        "numberError": "Debe ingresar otro número de movil...."
+        
     },
     "infoPage": {
         "PlanDetailsHeadertitle": "Información del Plan",
         "PlanDetailsHeadersubtitle": "Ser socio de Coopeuch",
         "PlanDetailsHeaderlegend": "Cada socio de la cooperativa paga mensualmente cuotas de participación que varían entre 10 a 100 ($2.640 a $26.400), las que serán descontadas automáticamente en tu Cuenta Vista Coopeuch."
         
+    },
+    "contractPage": {
+        "ContractsHeadertitle": "Contratos",
+        "ContractsHeaderlegend": "Conoce y lee tus contratos.↵Estos formalizan tu ingreso como socio y contratación de Cuenta Vista."
+
+
     }
 
 
