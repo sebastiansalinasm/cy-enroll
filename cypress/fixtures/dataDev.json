@@ -1,50 +1,54 @@
 {
+    
+
     "development": {
         "url": "https://enrolamientodev.coopeuch.cl",
         "names": "Sebastián Andrés",
         "middleName": "Salinas",
         "lastName": "Matus",
         "rutUser": "180602534",
-        "job": "QA Automation",
+        "job": 1037,
         "serialNumber": "A321123321",
         "email": "sebastiansalinas20@gmail.com",
         "cellphone": 997902346,
-        "address": "Juan de Barros 3885"
+        "address": "Juan de Barros 3885",
+        "other": "Departamento 904A"
     },
     "testQa":{
-        "url": "https://enrolamientoqa.coopeuch.cl",
         "names": "Yesenia Nazaret",
         "middleName": "Morillo",
         "lastName": "Carrizo",
-        "job": "Community Manager",
+        "job": 1091,
         "rutUser": "26555878K",
         "serialNumber": "666555444",
         "email": "yess992@gmail.com",
         "cellphone": 949145504,
-        "address": "Presidente Jose Manuel Balmaceda 2855"
+        "address": "Presidente Jose Manuel Balmaceda 2855",
+        "other": "Villa los Héroes"
     },
     "production":{
-        "url": "https://enrolamiento.coopeuch.cl",
-        "names": "Yesenia Nazaret",
-        "middleName": "Morillo",
-        "lastName": "Carrizo",
-        "job": "Community Manager",
-        "rutUser": "26555878K",
-        "serialNumber": "666555444",
-        "email": "yess992@gmail.com",
-        "cellphone": 949145504,
-        "address": "Juan de Barros 3885"
+        "names": "José David",
+        "middleName": "Ojeda",
+        "lastName": "Nuñez",
+        "job": 1066,
+        "rutUser": "17673454K",
+        "serialNumber": "A001002003",
+        "email": "jojedanunez@gmail.com",
+        "cellphone": 994388030,
+        "address": "Juan de Barros 3885",
+        "other": "Departamento 903-B"
     },
     "create-mode": {
-        "url": "http://localhost:3000/",
+        "url": "https://enrolamientodev.coopeuch.cl",
         "names": "Yesenia Nazaret",
         "middleName": "Morillo",
         "lastName": "Carrizo",
-        "job": "Community Manager",
+        "job": 1091,
         "rutUser": "26555878K",
         "serialNumber": "666555444",
         "email": "yess992@gmail.com",
         "cellphone": 949145504,
-        "address": "Presidente Jose Manuel Balmaceda 2855" 
+        "address": "Monjitas 565",
+        "other": "Piso 4 - Oficina 12"
     }
 }

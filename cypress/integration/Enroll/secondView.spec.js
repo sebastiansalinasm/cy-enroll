@@ -4,7 +4,7 @@ let data
 let txt
 
 beforeEach(function () { 
-    let env = process.env.NODE_ENV || 'create-mode'
+    let env = process.env.NODE_ENV || 'development'
     let vne = process.env.NODE_ENV || 'personalPage'
     cy.fixture('dataDev.json').then((json) => {
         data = json[env]
@@ -16,7 +16,7 @@ beforeEach(function () {
 
     Given('to enter a "Datos Personales" page', () => {
         cy.url('include', '/datos-personales').then(() => {
-            cy.wait(2000)
+            cy.wait(5000)
         // text checking 
             cy.get('p[class="PersonalDataHeader-title"]').contains(txt.PersonalDataHeadertitle)
             cy.get('[class="PersonalDataMessage"]').then(($personalData) => {
@@ -34,6 +34,7 @@ beforeEach(function () {
             $autoComplete[0].click()
             console.log('Dirección Particular:', $autoComplete[0].innerText)
     })
+        cy.get('[id=depto]').type(data.other)
 })
 
     Then('button continue is on to third view', () => {

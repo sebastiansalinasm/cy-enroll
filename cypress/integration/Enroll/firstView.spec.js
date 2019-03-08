@@ -4,7 +4,7 @@ let data
 let txt
 
 beforeEach(function () { 
-    let env = process.env.NODE_ENV || 'create-mode'
+    let env = process.env.NODE_ENV || 'development'
     let vne = process.env.NODE_ENV || 'homePage'
     cy.fixture('dataDev.json').then((json) => {
         data = json[env]
@@ -17,7 +17,7 @@ beforeEach(function () {
 
     Given('to enter a "Hazte Socio" page', () => {
         cy.visit(data.url)
-        cy.wait(2000)
+        cy.wait(3000)
 
 })
     When('fill the forms', () => {
@@ -28,7 +28,8 @@ beforeEach(function () {
         cy.get('[id=name]').type(data.names)
         cy.get('[id=apellidop]').type(data.middleName)
         cy.get('[id=apellidom]').type(data.lastName)
-        cy.get('[id=profesion]').type(data.job)
+        cy.get('label[for="s-professions"]').click()
+        cy.get(`li[name=${data.job}]`).click()
         cy.get('[id=rut]').type(data.rutUser)
         cy.get('[id=serie]').type(data.serialNumber)
         cy.get('[class="l_credential"]').click()

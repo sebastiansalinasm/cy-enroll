@@ -4,7 +4,7 @@ let data
 let txt
 
 beforeEach(function () { 
-    let env = process.env.NODE_ENV || 'create-mode'
+    let env = process.env.NODE_ENV || 'development'
     let vne = process.env.NODE_ENV || 'infoPage'
     cy.fixture('dataDev.json').then((json) => {
         data = json[env]
