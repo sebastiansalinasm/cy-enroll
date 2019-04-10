@@ -2,7 +2,7 @@
     
 
     "development": {
-        "url": "https://enrolamientodev.coopeuch.cl",
+        "url": "http://localhost:3000",
         "names": "Sebastián Andrés",
         "middleName": "Salinas",
         "lastName": "Matus",
@@ -10,7 +10,7 @@
         "job": 1037,
         "serialNumber": "A321123321",
         "email": "sebastiansalinas20@gmail.com",
-        "cellphone": 997902346,
+        "cellphone": 66600935,
         "address": "Juan de Barros 3885",
         "other": "Departamento 904A"
     },

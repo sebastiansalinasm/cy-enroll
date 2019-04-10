@@ -13,7 +13,7 @@ Feature: Flujo enrolamiento Coopeuch
     # Screen 3
     Scenario: Información del Plan
         Given to enter a "Información del Plan" page
-        When read the text
+        When read the text and scroll
         Then press continue button
     # Screen 4 
     Scenario: Contratos
@@ -21,6 +21,12 @@ Feature: Flujo enrolamiento Coopeuch
         When read all texts 
         When check the "Mandato de Pago"
         Then press to continue button for the next page
+    # Screen 5
+    Scenario: Autenticacion y Firma
+        Given to enter "Autenticacion y Firma" page
+        When answer the question 
+        When press send button
+        Then insert sms code
 
     
     

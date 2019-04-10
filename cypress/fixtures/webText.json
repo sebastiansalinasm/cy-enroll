@@ -19,9 +19,13 @@
     },
     "contractPage": {
         "ContractsHeadertitle": "Contratos",
-        "ContractsHeaderlegend": "Conoce y lee tus contratos.↵Estos formalizan tu ingreso como socio y contratación de Cuenta Vista."
-
-
+        "ContractsHeaderlegend": "Conoce y lee tus contratos. Estos formalizan tu ingreso como socio y contratación de Cuenta Vista."
+    },
+    "authPage": {
+        "HiringHeaderinfo": "Responde las siguientes preguntas para tu autenticación y firmar de forma digital tus contratos.",
+        "HiringWarningbox": "Recuerda que nos autorizaste consultar tus datos personales, laborales y económicos en fuentes externas.",
+        "HiringSendSmscard": "Te enviaremos un código de verificación al siguiente número celular +56 9 6660 0935 para terminar el proceso de firma electrónica."
+        
     }
 
 

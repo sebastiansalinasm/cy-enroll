@@ -16,25 +16,38 @@ beforeEach(function () {
 
     Given('to enter a "Datos Personales" page', () => {
         cy.url('include', '/datos-personales').then(() => {
-            cy.wait(5000)
+            cy.wait(3000)
         // text checking 
-            cy.get('p[class="PersonalDataHeader-title"]').contains(txt.PersonalDataHeadertitle)
+            cy.get('p[class="PersonalDataHeader-title"]')
+            .contains(txt.PersonalDataHeadertitle)
+
             cy.get('[class="PersonalDataMessage"]').then(($personalData) => {
                 console.log($personalData)
             })
-            cy.get('p[class="PersonalDataForm-title"]').contains(txt.PersonalDataFormtitle)
+            cy.get('p[class="PersonalDataForm-title"]')
+            .contains(txt.PersonalDataFormtitle)
         })
     })
     When('fill phone and address forms', () => {
-        cy.get('[id=phone]').type(data.cellphone)
-        cy.get('[id=phonecopy]').type(data.cellphone)
-        cy.get('[id=email]').type(data.email)
-        cy.get('[role=combobox]').type(data.address)
+    // *** Completing field's boxes ***
+    // phonenumber
+        cy.get('[id=phone]')
+        .type(data.cellphone, {delay: 50})
+    // phonenumber 2
+        cy.get('[id=phonecopy]')
+        .type(data.cellphone, {delay: 50})
+    // email
+        cy.get('[id=email]')
+        .type(data.email, {delay:50})
+    // profession
+        cy.get('[role=combobox]')
+        .type(data.address)
         cy.get('[class="suggestion-item"]').then(($autoComplete) => {
             $autoComplete[0].click()
             console.log('Dirección Particular:', $autoComplete[0].innerText)
-    })
-        cy.get('[id=depto]').type(data.other)
+     }) 
+        // cy.get('[id=depto]')
+        // .type(data.other, {delay:50})
 })
 
     Then('button continue is on to third view', () => {

@@ -13,7 +13,7 @@
   "dependencies": {},
   "devDependencies": {
     "cucumber": "^5.0.3",
-    "cypress": "^3.1.5",
+    "cypress": "^3.2.0",
     "cypress-cucumber-preprocessor": "^1.9.1"
   },
   "cypress-cucumber-preprocessor": {

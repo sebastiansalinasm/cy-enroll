@@ -15,11 +15,13 @@ beforeEach(function () {
 });
 
     Given('to enter a "Información del Plan" page', () => {
-        cy.wait(2000)
+        cy.wait(1000)
         cy.url('include', '/detalles-plan')
 })
-    When('read the text', () => {
-        cy.get('p[class="PlanDetailsHeader-title"]').contains(txt.PlanDetailsHeadertitle)
+    When('read the text and scroll', () => {
+        cy.get('p[class="PlanDetailsHeader-title"]')
+        .contains(txt.PlanDetailsHeadertitle)
+        cy.scrollTo('bottom', {duration:500})
 
     Then('press continue button', () => {
         cy.get('[id=btn-continuar]').then(($btnContinue) => {
