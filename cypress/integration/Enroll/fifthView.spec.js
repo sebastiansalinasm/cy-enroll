@@ -60,7 +60,7 @@ beforeEach(function () {
     })
         )
 })
-    Then('insert sms code', () => {
+    Then('insert sms code and finish', () => {
         cy.wait(2000)
         cy.get('.HiringSendSms-card > p')
         .contains(txt.HiringSendSmscard)
