@@ -1,5 +1,4 @@
 import {Given, When, Then} from "cypress-cucumber-preprocessor/steps";
-import { connectableObservableDescriptor } from "rxjs/observable/ConnectableObservable";
 // Scenario 5
 let data
 let txt

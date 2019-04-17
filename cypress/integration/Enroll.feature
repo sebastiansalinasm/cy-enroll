@@ -26,7 +26,7 @@ Feature: Flujo enrolamiento Coopeuch
         Given to enter "Autenticacion y Firma" page
         When answer the question 
         When press send button
-        Then insert sms code
+        Then insert sms code and finish
 
     
     
